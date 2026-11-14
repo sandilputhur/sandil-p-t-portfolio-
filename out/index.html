@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sandil Puthur — Graphic Designer & Visual Media Artist</title>
+<meta name="description" content="Portfolio of Sandil P. T — graphic designer, visual media artist and digital illustrator from Kerala, India. Logos, posters, typography, brochures, visiting cards and book menus.">
+<meta name="theme-color" content="#0d0d0d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Manrope:wght@400;500;600;700&family=Caveat:wght@500;700&family=Noto+Sans+Malayalam:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=6">
+</head>
+<body class="loading">
+
+<!-- SVG filters: liquid text warp + gooey merge -->
+<svg class="defs" width="0" height="0" aria-hidden="true">
+  <defs>
+    <filter id="liquid" x="-5%" y="-30%" width="110%" height="160%">
+      <feTurbulence id="liquidNoise" type="fractalNoise" baseFrequency="0.006 0.02" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="26" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="b"/>
+      <feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -8" result="g"/>
+      <feComposite in="SourceGraphic" in2="g" operator="atop"/>
+    </filter>
+    <filter id="paper" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.0065" numOctaves="5" seed="11" result="t"/>
+      <feDiffuseLighting in="t" lighting-color="#ffffff" surfaceScale="2.2" result="l">
+        <feDistantLight azimuth="235" elevation="58"/>
+      </feDiffuseLighting>
+    </filter>
+  </defs>
+</svg>
+
+<!-- crumpled paper + grid -->
+<div class="paper" aria-hidden="true"><svg width="100%" height="100%"><rect width="100%" height="100%" filter="url(#paper)"/></svg></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- loader -->
+<div class="loader" aria-hidden="true">
+  <div class="loader-glyphs"><span>✸</span><span>✦</span><span>♣</span></div>
+  <div class="loader-count"><b id="loadNum">0</b>%</div>
+</div>
+
+<!-- cursor lens -->
+<div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+
+<!-- glass nav -->
+<nav class="nav glass" aria-label="Main">
+  <a href="#top" class="nav-mark" aria-label="Back to top"><img src="assets/logos/25.jpg" alt=""></a>
+  <div class="nav-links">
+    <span class="nav-blob" aria-hidden="true"></span>
+    <a href="#about">About</a>
+    <a href="#studio">Studio</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="mailto:sandilputhur@gmail.com" class="nav-cta">Hire me<i></i></a>
+</nav>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="hero-meta reveal-up">
+      <span>Graphic Designer / Illustrator · Kerala, India</span>
+      <span class="dot-live"><i></i>Open for work</span>
+      <span>2026</span>
+    </div>
+
+    <h1 class="mega" aria-label="Portfolio">
+      <span class="mega-l">P</span><span class="mega-l">O</span><span class="mega-l">R</span><span class="mega-l">T</span><span class="mega-l">F</span><span class="mega-o"><span class="mega-o-blob"><img src="assets/sandil.jpg" alt=""></span></span><span class="mega-l">L</span><span class="mega-l">I</span><span class="mega-l">O</span>
+    </h1>
+
+    <div class="sig">
+      <svg class="sig-arrow" viewBox="0 0 60 70" aria-hidden="true"><path d="M8 4 C 4 30, 10 52, 52 58 M44 50 L53 58 L44 64"/></svg>
+      <span class="sig-name">Sandil Puthur</span>
+    </div>
+
+    <div class="glyphs" aria-hidden="true"><span>✸</span><span>✦</span><span>♣</span></div>
+  </header>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="liquid-bg" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+    <div class="about-grid">
+      <!-- turntable selection frame -->
+      <figure class="frame reveal-pop">
+        <div class="frame-tag">W 640 &nbsp;H 640</div>
+        <div class="frame-box">
+          <img id="spinImg" src="assets/logos/01.jpg" alt="Rotating selection of logo work">
+          <i class="h tl"></i><i class="h tc"></i><i class="h tr"></i><i class="h hl"></i><i class="h hr"></i><i class="h bl"></i><i class="h bc"></i><i class="h br"></i>
+        </div>
+        <figcaption><span id="spinName">Arcaailano</span><span class="mono">Logo</span></figcaption>
+        <ul class="facts">
+          <li><span>Based in</span><b>Kerala, India</b></li>
+          <li><span>Languages</span><b>English, Malayalam</b></li>
+          <li><span>Instagram</span><b><a href="https://instagram.com/sa_x.dil_" target="_blank" rel="noopener">@sa_x.dil_</a></b></li>
+        </ul>
+      </figure>
+
+      <!-- main column -->
+      <div class="about-main">
+        <div class="hello glass reveal-up">
+          <h2 class="hello-h">HELLO<span class="wave">👋</span></h2>
+          <p class="hello-who"><b>Hi, I'm Sandil P. T</b> — Graphic Designer · Visual Media Artist · Digital Illustrator.</p>
+          <p class="hello-lead">Turning imagination into <em>visual luxury.</em></p>
+          <p>I’m a multidisciplinary graphic designer and visual media artist specializing in <strong>brand identity, digital illustration, character design and motion graphics</strong>. I turn concepts into visual stories across commercial agency briefs, independent filmmaking and children’s book illustration.</p>
+          <p>I take projects from the first idea all the way to client-ready delivery, using industry-standard design tools and front-end web technologies. From the “<em class="ml">ചായ</em> (Chaya)” tea shop menu to brand identities like <em>Magic City</em> and tetra-pack designs for <em>BABA Land</em>, I love blending storytelling with modern visual aesthetics.</p>
+          <div class="stats">
+            <div><b>20+</b><span>agency deliverables</span></div>
+            <div><b>75</b><span>pieces in this studio</span></div>
+            <div><b>2</b><span>picture books written &amp; illustrated</span></div>
+          </div>
+        </div>
+
+        <h3 class="block-h reveal-up">Experience</h3>
+        <ol class="timeline">
+          <li class="xp reveal-up">
+            <div class="xp-top"><b class="xp-role">Graphic Design &amp; Branding Intern</b><span class="xp-date">Apr – May 2026</span></div>
+            <p class="xp-org">Digital Evolutions · Dubai, UAE (Remote)</p>
+            <ul class="xp-list">
+              <li>Delivered 20+ client and internal design pieces across retail, food, beauty and automotive — brand identities, custom logos, logo redesigns, promotional posters, Instagram carousels and website layouts.</li>
+              <li>Worked independently with the Creative Director and design team to turn client briefs into polished mockups and production-ready assets on tight agency deadlines.</li>
+              <li>Sharpened workflow in Adobe Illustrator, Photoshop, Figma and structured design presentations.</li>
+            </ul>
+          </li>
+          <li class="xp reveal-up">
+            <div class="xp-top"><b class="xp-role">Founder &amp; Lead Visual Designer</b><span class="xp-date">2025 – Present</span></div>
+            <p class="xp-org">SP Designs &amp; SP Films · Independent creative venture</p>
+            <ul class="xp-list">
+              <li>Run an independent creative banner delivering end-to-end brand identity systems, digital illustrations, motion posters and multimedia storytelling for commercial and artistic clients.</li>
+              <li>Conceptualized and produced the inauguration campaign for <b>Magic City</b> (Kottayam, Oct 2026) and the audition posters for <b>Team Xception</b> (Jul – Aug 2026).</li>
+              <li>Wrote, directed and released the independent short film <b><em>Birthstone</em></b> (Nov 2025).</li>
+            </ul>
+          </li>
+        </ol>
+
+        <h3 class="block-h reveal-up">Key Projects</h3>
+        <div class="projects">
+          <article class="proj reveal-up"><span class="proj-no">01</span><b><em>The Sea Book</em> &amp; <em>Pip and the Quiet Hum</em></b><p>Original children’s picture books — authored and illustrated, with continuous vector spreads, custom characters and environment art.</p></article>
+          <article class="proj reveal-up"><span class="proj-no">02</span><b>Interactive Digital Portfolio</b><p>A responsive personal portfolio coded in HTML5 &amp; CSS3 and hosted on GitHub Pages, with media filtering and dynamic content updates.</p></article>
+          <article class="proj reveal-up"><span class="proj-no">03</span><b>Changanassery–Kottayam Route Map</b><p>An illustrated landscape map of the region’s roadways, waterways and geographic connections.</p></article>
+        </div>
+      </div>
+
+      <!-- side column -->
+      <div class="side reveal-up">
+        <h3 class="side-h">Skills</h3>
+        <ul class="apps">
+          <li class="app ai" title="Adobe Illustrator">Ai</li>
+          <li class="app ps" title="Adobe Photoshop">Ps</li>
+          <li class="app id" title="Adobe InDesign">Id</li>
+          <li class="app fg" title="Figma"><svg viewBox="0 0 24 24"><path d="M9 3h3v6H9a3 3 0 010-6zM12 3h3a3 3 0 010 6h-3zM9 9h3v6H9a3 3 0 010-6zM15 9a3 3 0 110 6 3 3 0 010-6zM9 15h3v3a3 3 0 11-3-3z"/></svg></li>
+          <li class="app cv" title="Canva">Ca</li>
+          <li class="app web" title="HTML, CSS &amp; GitHub Pages">&lt;/&gt;</li>
+        </ul>
+        <p class="skill-group">Design &amp; Visual Arts</p>
+        <ul class="chips">
+          <li>Brand Identity</li><li>Logo Creation</li><li>Digital Illustration</li><li>Character Design</li><li>3D CGI Modelling</li><li>Digital Painting</li><li>Iconography</li><li>Typography</li><li>UI/UX Design</li><li>Motion Graphics</li>
+        </ul>
+        <p class="skill-group">Software</p>
+        <ul class="chips">
+          <li>Adobe Illustrator</li><li>Adobe Photoshop</li><li>Adobe InDesign</li><li>Figma</li><li>Canva</li>
+        </ul>
+        <p class="skill-group">Web</p>
+        <ul class="chips">
+          <li>HTML</li><li>CSS</li><li>GitHub Pages</li>
+        </ul>
+
+        <h3 class="side-h">Education</h3>
+        <div class="side-row edu"><span class="edu-date">2024 – Present</span><b>B.A. (Hons.) Animation &amp; Graphic Design</b><span>St. Joseph College of Communication (SJCC), Changanassery, Kerala</span><small>Visual communication · digital painting · iconography · 3D CGI character modelling · UI/UX · publication layout</small></div>
+        <div class="side-row edu"><span class="edu-date">2017 – 2023</span><b>Senior Secondary &amp; Secondary (Grades VI – XII)</b><span>Sree Gokulam Public School, Guruvayur, Kerala</span></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TORN BAND ============ -->
+  <section class="band" aria-label="Sandil Puthur — Graphic Designer, Illustrator, Visual Media Artist">
+    <div class="tear tear-top" aria-hidden="true"></div>
+    <div class="band-inner">
+      <div class="marquee m1" aria-hidden="true"><div class="track"></div></div>
+      <div class="marquee m2" aria-hidden="true"><div class="track"></div></div>
+      <div class="sticker">
+        <div class="sticker-shape"><img src="assets/sandil.jpg" alt="Portrait of Sandil Puthur"></div>
+      </div>
+    </div>
+    <div class="tear tear-bot" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============ STUDIO ============ -->
+  <section class="studio" id="studio">
+    <div class="studio-head">
+      <h2 class="studio-title"><span class="split">THE STUDIO</span></h2>
+      <p class="studio-sub">75 pieces · 6 rooms · zero templates. Pick a room, or just keep scrolling.</p>
+      <div class="polaroids" aria-hidden="true">
+        <figure class="pol p1"><img src="assets/posters/23.jpg" alt=""></figure>
+        <figure class="pol p2"><img src="assets/posters/11.jpg" alt=""></figure>
+        <figure class="pol p3"><img src="assets/posters/07.jpg" alt=""></figure>
+        <figure class="pol p4"><img src="assets/posters/18.jpg" alt=""></figure>
+      </div>
+    </div>
+
+    <!-- sticky room switcher -->
+    <div class="rooms-wrap">
+      <nav class="rooms glass" aria-label="Portfolio categories">
+        <span class="rooms-blob" aria-hidden="true"></span>
+        <a href="#logos" data-room="logos">Logos<sup>28</sup></a>
+        <a href="#posters" data-room="posters">Posters<sup>29</sup></a>
+        <a href="#typography" data-room="typography">Type<sup>4</sup></a>
+        <a href="#brochures" data-room="brochures">Brochures<sup>7</sup></a>
+        <a href="#cards" data-room="cards">Cards<sup>4</sup></a>
+        <a href="#book" data-room="book">Book Menu<sup>2</sup></a>
+      </nav>
+    </div>
+
+    <!-- 01 LOGOS : sticker bomb -->
+    <article class="room" id="logos" data-room="logos">
+      <header class="room-head">
+        <span class="room-no">01</span>
+        <h3 class="room-title">Logos</h3>
+        <p class="room-desc">A sticker bomb of 28 marks. <b>Drag them around</b>, slap them anywhere — click one to see it big.</p>
+        <button class="btn glass" id="shuffle" type="button"><span>↻</span> Shuffle</button>
+      </header>
+      <div class="stickers" id="stickers"></div>
+    </article>
+
+    <!-- 02 POSTERS : pinned horizontal wall -->
+    <article class="room room-posters" id="posters" data-room="posters">
+      <div class="pin">
+        <header class="room-head">
+          <span class="room-no">02</span>
+          <h3 class="room-title">Posters</h3>
+          <p class="room-desc">29 posters taped to one long wall. Scroll and the wall slides by.</p>
+          <div class="counter glass"><b id="posterNow">01</b> / 29</div>
+        </header>
+        <div class="wall"><div class="wall-track" id="wall"></div></div>
+        <div class="wall-bar"><i id="wallBar"></i></div>
+      </div>
+    </article>
+
+    <!-- 03 TYPOGRAPHY : loupe specimens -->
+    <article class="room" id="typography" data-room="typography">
+      <header class="room-head">
+        <span class="room-no">03</span>
+        <h3 class="room-title">Typography</h3>
+        <p class="room-desc">Letters that act out their own meaning. Hover with the <b>liquid loupe</b> to read the details.</p>
+      </header>
+      <div class="specimens" id="specimens"></div>
+    </article>
+
+    <!-- 04 BROCHURES : capital custodia case -->
+    <article class="room" id="brochures" data-room="brochures">
+      <header class="room-head">
+        <span class="room-no">04</span>
+        <h3 class="room-title">Brochures</h3>
+        <p class="room-desc">Capital Custodia — a luxury watch buy-back brand, carried from the website down to every Instagram post.</p>
+      </header>
+      <div class="case">
+        <div class="browser glass reveal-up">
+          <div class="browser-bar"><i></i><i></i><i></i><span>capitalcustodia.com</span></div>
+          <button class="browser-view" type="button" data-cat="brochures" data-i="0" aria-label="View the Capital Custodia website design">
+            <img src="assets/brochures/01.jpg" alt="Capital Custodia website design">
+          </button>
+        </div>
+        <div class="phone glass reveal-up">
+          <div class="phone-notch"></div>
+          <div class="phone-head">
+            <img src="assets/logos/08.jpg" alt="">
+            <div><b>capital.custodia</b><span>Luxury watch buyers</span></div>
+          </div>
+          <div class="feed" id="feed"></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 05 CARDS : 3D flip -->
+    <article class="room" id="cards" data-room="cards">
+      <header class="room-head">
+        <span class="room-no">05</span>
+        <h3 class="room-title">Visiting Cards</h3>
+        <p class="room-desc">Two sides to every story. <b>Tap a card to flip it.</b></p>
+      </header>
+      <div class="cards" id="cardsBox"></div>
+    </article>
+
+    <!-- 06 BOOK MENU : open book -->
+    <article class="room" id="book" data-room="book">
+      <header class="room-head">
+        <span class="room-no">06</span>
+        <h3 class="room-title">Book Menu</h3>
+        <p class="room-desc">“<span class="ml">ചായ</span>” (Chaya) — a specialty tea shop, illustrated storefront and menu bound like a little book.</p>
+      </header>
+      <div class="book-stage">
+        <div class="book-bg ml" aria-hidden="true">ചായ</div>
+        <div class="book" id="bookEl">
+          <button class="page left" type="button" data-cat="book" data-i="0" aria-label="View Chaya storefront illustration"><img src="assets/book/01.jpg" alt="Chaya storefront illustration"></button>
+          <button class="page right" type="button" data-cat="book" data-i="1" aria-label="View Chaya menu"><img src="assets/book/02.jpg" alt="Chaya menu"></button>
+          <div class="spine" aria-hidden="true"></div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="tear tear-top" aria-hidden="true"></div>
+    <div class="contact-inner">
+      <p class="contact-kicker">✸ Got a brand, a poster, a story? ✸</p>
+      <h2 class="contact-h"><span>LET'S MAKE</span><span class="outline">SOMETHING</span><span>LOUD.</span></h2>
+      <div class="contact-btns">
+        <a class="cbtn glass-dark" href="mailto:sandilputhur@gmail.com"><small>Email</small>sandilputhur@gmail.com</a>
+        <a class="cbtn glass-dark" href="https://wa.me/919446176826" target="_blank" rel="noopener"><small>WhatsApp / Phone</small>+91 94461 76826</a>
+        <a class="cbtn glass-dark" href="https://instagram.com/sa_x.dil_" target="_blank" rel="noopener"><small>Instagram</small>@sa_x.dil_</a>
+        <button class="cbtn glass-dark" type="button" id="copyMail"><small>Quick</small><span>Copy email</span></button>
+      </div>
+      <div class="foot">
+        <span>© 2026 Sandil P. T</span>
+        <span class="glyphs"><span>✸</span><span>✦</span><span>♣</span></span>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- lightbox -->
+<dialog class="lb" id="lb" aria-label="Artwork viewer">
+  <div class="lb-stage">
+    <img id="lbImg" alt="">
+  </div>
+  <div class="lb-bar glass">
+    <button type="button" id="lbPrev" aria-label="Previous">←</button>
+    <div class="lb-info"><b id="lbTitle"></b><span id="lbMeta"></span></div>
+    <button type="button" id="lbNext" aria-label="Next">→</button>
+    <button type="button" id="lbClose" aria-label="Close">✕</button>
+  </div>
+</dialog>
+
+<div class="toast glass" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js?v=6"></script>
+</body>
+</html>
